@@ -3,7 +3,7 @@ package factory
 import (
 	"fmt"
 
-	visitor "github.com/go-design-patterns/visitor-pattern"
+	visitor "github.com/kil-san/go-design-patterns/visitor-pattern"
 )
 
 // FactoryDemo test factory pattern

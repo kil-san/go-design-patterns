@@ -1,8 +1,8 @@
 package factory
 
 import (
-	"github.com/go-design-patterns/model"
-	visitor "github.com/go-design-patterns/visitor-pattern"
+	"github.com/kil-san/go-design-patterns/model"
+	visitor "github.com/kil-san/go-design-patterns/visitor-pattern"
 )
 
 type foodFactory struct {

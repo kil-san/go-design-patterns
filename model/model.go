@@ -1,8 +1,8 @@
 package model
 
 type Food struct {
-	name     string
-	count    int
-	farmRate int
-	sellRate int
+	Name     string
+	Count    int
+	FarmRate int
+	SellRate int
 }

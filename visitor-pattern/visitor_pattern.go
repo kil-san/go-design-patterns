@@ -3,12 +3,12 @@ package visitor
 import (
 	"fmt"
 
-	"github.com/go-design-patterns/model"
+	"github.com/kil-san/go-design-patterns/model"
 )
 
 func NewFood(name string, opts ...Option) *model.Food {
 	f := &model.Food{
-		name: name,
+		Name: name,
 	}
 
 	if len(opts) > 0 {
@@ -24,8 +24,8 @@ func NewFood(name string, opts ...Option) *model.Food {
 func VisitorDemo() {
 	fmt.Println("Visitor Demo.........")
 	opts := []Option{
-		withCount(3),
-		withFarmRate(5),
+		WithCount(3),
+		WithFarmRate(5),
 	}
 
 	f := NewFood("Yam", opts...)

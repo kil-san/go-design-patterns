@@ -1,25 +1,25 @@
 package visitor
 
 import (
-	"github.com/go-design-patterns/model"
+	"github.com/kil-san/go-design-patterns/model"
 )
 
 type Option func(*model.Food)
 
 func WithCount(n int) Option {
 	return func(f *model.Food) {
-		f.count = n
+		f.Count = n
 	}
 }
 
 func WithFarmRate(n int) Option {
 	return func(f *model.Food) {
-		f.farmRate = n
+		f.FarmRate = n
 	}
 }
 
 func WithSellRate(n int) Option {
 	return func(f *model.Food) {
-		f.sellRate = n
+		f.SellRate = n
 	}
 }
